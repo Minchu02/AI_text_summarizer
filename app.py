@@ -5,7 +5,7 @@ from utils import split_text_into_chunks
 
 app = Flask(__name__)
 
-model_name = "sshleifer/distilbart-cnn-12-6"
+model_name = "philschmid/bart-large-cnn-samsum"
 tokenizer = BartTokenizer.from_pretrained(model_name)
 model = BartForConditionalGeneration.from_pretrained(model_name)
 
